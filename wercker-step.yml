@@ -1,0 +1,29 @@
+name: sqwiggle-notify
+version: 0.1.0
+description: Send a message to a Sqwiggle room
+keywords:
+    - notification
+    - sqwiggle
+properties:
+    token:
+        type: string
+        required: true
+    room-id:
+        type: string
+        required: true
+    from-name:
+        type: string
+        default: wercker
+    failed-message:
+        type: string
+    failed-notify:
+        type: string
+        default: "true"
+    passed-message:
+        type: string
+    passed-notify:
+        type: string
+        default: "false"
+    on:
+        type: string
+        default: always
