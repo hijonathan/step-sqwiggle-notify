@@ -10,4 +10,4 @@ room_id = str(sys.argv[2])
 message = str(sys.argv[3])
 
 client = sqwiggle.Sqwiggle(token=token)
-client.method('/messages', method='POST', parameters={'room_id': room_id, 'text': message, 'parse': False})
+client.method('/messages', method='POST', parameters={'room_id': room_id, 'text': message, 'format': 'html', 'parse': False})
